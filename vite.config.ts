@@ -1,7 +1,8 @@
 /// <reference types='vitest' />
-import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
+import { TanStackRouterVite } from '@tanstack/router-plugin/vite';
+import { defineConfig } from 'vite';
 
 export default defineConfig({
   root: __dirname,
@@ -17,7 +18,7 @@ export default defineConfig({
     host: 'localhost',
   },
 
-  plugins: [react(), nxViteTsPaths()],
+  plugins: [react(), nxViteTsPaths(), TanStackRouterVite()],
 
   // Uncomment this if you are using workers.
   // worker: {
