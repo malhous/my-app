@@ -1,0 +1,29 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "Bundler",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "ESNext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@my-app/auth": ["libs/auth/src/index.ts"],
+      "@my-app/auth/*": ["libs/auth/src/lib/*"],
+      "@my-app/http": ["libs/http/src/index.ts"],
+      "@my-app/http/*": ["libs/http/src/lib/*"],
+      "@my-app/query-client": ["libs/query-client/src/index.ts"],
+      "@my-app/routes": ["libs/routes/src/index.ts"],
+      "@my-app/theme": ["libs/theme/src/index.ts"],
+      "@my-app/users": ["libs/users/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
